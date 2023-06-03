@@ -2,6 +2,11 @@
 if (isset($_SESSION['user'])) {
  header('location:home.php');
 }
+include_once 'assets/php/config.php';
+$db =new Database();
+$sql ="UPDATE visitors SET hints= hints+1 WHERE id = 0";
+$stmt = $db->conn->prepare($sql);
+$stmt->execute();
 
 ?>
 

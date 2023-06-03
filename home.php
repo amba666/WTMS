@@ -362,6 +362,20 @@ function display_all_tran_request(){
     });
 }
 
+checkNotification();
+//check notification (red dot)
+ function checkNotification(){
+    $.ajax({
+            url: 'assets/php/process.php',
+            method: 'post',
+            data: {action:'checkNotification'},
+            success:function(response){
+                //console.log(response);
+                $("#checkNotification").html(response);
+            }
+
+    });
+ }
 
 
 }); 

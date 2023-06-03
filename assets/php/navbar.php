@@ -50,7 +50,7 @@ require_once 'assets/php/session.php';
         <a class="nav-link" href="feedback.php"><i class="fas fa-comment-dots"></i>&nbsp;Feedback</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="notification.php"><i class="fas fa-bell"></i>&nbsp;Notification</a>
+        <a class="nav-link" href="notification.php"><i class="fas fa-bell"></i>&nbsp;Notification&nbsp; <span id="checkNotification"></span></a>
       </li>
       <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" id="navbardrop"  data-toggle="dropdown" >

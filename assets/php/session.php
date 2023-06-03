@@ -22,10 +22,11 @@ $cregion = $data['region'];
 $phone = $data['phone'];
 $cgenders = $data['gender'];
 $cdob = $data['dob'];
-$cphot = $data['photo'];
+$cphoto = $data['photo'];
 $cschoolname = $data['shool_name'];
 $cpass = $data['password'];
 $created = $data['created_at'];
+$reg_on = date('d M Y' );
 $verified = $data['verified'];
 
 $fname = strtok($cname, ""); //extraction fistname from the full name
